@@ -1,16 +1,13 @@
-import './App.css'
+import './App.css';
+import MovableCharacter from './Components/General/MovableCharacter';
+import { UniqueIdProvider } from './Components/General/UniqueIdProvider';
 
 function App() {
   return (
-    <>
-      <div>
-        <h1>
-          Wow this loads so quick
-        </h1>
-      </div>
-        
-    </>
-  )
+    <UniqueIdProvider>
+        <MovableCharacter/>
+    </UniqueIdProvider>
+  );
 }
 
-export default App
+export default App;
